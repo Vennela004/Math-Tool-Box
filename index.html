@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math Tool Box</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Math Tool Box</h1>
+
+    <button id="greetBtn">Greeting</button>
+
+    <div class="calculator">
+      <h2>Calculator</h2>
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <input type="number" id="num2" placeholder="Enter second number" />
+      <div class="operations">
+        <button class="calc-btn" onclick="calculate('add', this)">Add</button>
+        <button class="calc-btn" onclick="calculate('subtract', this)">Subtract</button>
+        <button class="calc-btn" onclick="calculate('multiply', this)">Multiply</button>
+        <button class="calc-btn" onclick="calculate('divide', this)">Divide</button>
+      </div>
+      <p id="result">Result: </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
